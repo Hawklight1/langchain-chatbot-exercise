@@ -1,3 +1,4 @@
+#%%
 # This import allows us to use modern Python type hints
 # (like list[str]) even if you are working with older Python versions
 from __future__ import annotations
@@ -17,7 +18,7 @@ from langchain_core.prompts import ChatPromptTemplate, FewShotChatMessagePromptT
 from langchain_core.output_parsers import StrOutputParser
 
 # Load Api key from .env
-load_dotenv()
+load_dotenv("C:/Users/benmc/OneDrive/Wesleyan/QAC 387 TA/langchain-chatbot-exercise/.env")
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
@@ -181,3 +182,5 @@ question("Why does my cat always want to sleep on my keyboard?", temperature=0.0
 # - Modify Personality in INSTRUCTIONS (e.g., be more humorous, more formal, etc.)
 # - Increase Few-Shot Examples
 # - Create your own chatbot
+
+# %%
